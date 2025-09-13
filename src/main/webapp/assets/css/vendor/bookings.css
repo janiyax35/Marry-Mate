@@ -1,0 +1,145 @@
+/**
+ * Vendor Bookings CSS - Marry Mate Wedding Planning System
+ * Current Date and Time: 2025-05-07 08:32:02
+ * Current User: IT24102137
+ */
+
+/* Booking Stat Cards */
+.booking-stat-card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s;
+}
+
+.booking-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.stat-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gray-600);
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--text-dark);
+}
+
+/* Booking Status Badges */
+.status-badge-pending {
+    background-color: #f39c12;
+}
+
+.status-badge-confirmed {
+    background-color: #2ecc71;
+}
+
+.status-badge-cancelled {
+    background-color: #e74c3c;
+}
+
+.status-badge-completed {
+    background-color: #3498db;
+}
+
+/* Payment Status Badges */
+.payment-badge-pending {
+    background-color: #f39c12;
+}
+
+.payment-badge-partial {
+    background-color: #3498db;
+}
+
+.payment-badge-complete {
+    background-color: #2ecc71;
+}
+
+.payment-badge-refunded {
+    background-color: #e74c3c;
+}
+
+/* Search Container */
+.search-container {
+    width: 250px;
+}
+
+/* Calendar View */
+#bookingsCalendar {
+    min-height: 600px;
+}
+
+.fc-event {
+    cursor: pointer;
+}
+
+.fc-event-pending {
+    background-color: #f39c12 !important;
+    border-color: #f39c12 !important;
+}
+
+.fc-event-confirmed {
+    background-color: #2ecc71 !important;
+    border-color: #2ecc71 !important;
+}
+
+.fc-event-cancelled {
+    background-color: #e74c3c !important;
+    border-color: #e74c3c !important;
+    text-decoration: line-through;
+}
+
+.fc-event-completed {
+    background-color: #3498db !important;
+    border-color: #3498db !important;
+}
+
+/* Booking Details Modal */
+.booking-info-section,
+.client-info-section,
+.location-info-section,
+.financial-info-section,
+.requirements-section {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: 1.5rem;
+}
+
+.booking-info-section:last-child,
+.client-info-section:last-child,
+.location-info-section:last-child,
+.financial-info-section:last-child,
+.requirements-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .search-container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .stat-value {
+        font-size: 1.25rem;
+    }
+}

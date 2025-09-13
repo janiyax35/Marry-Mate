@@ -1,0 +1,421 @@
+/* 
+ * Marry Mate - Contact Page Styles
+ * Current Date and Time: 2025-05-18 12:16:08
+ * Current User: IT24100905
+ */
+
+/* Contact Hero Section */
+.contact-hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1524824267900-2fa9cbf7a506?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+    background-size: cover;
+    padding: 180px 0 100px;
+    color: var(--text-light);
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9), rgba(38, 50, 56, 0.8));
+    z-index: 1;
+}
+
+.contact-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.contact-hero .lead {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact Information Cards */
+.contact-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.1), rgba(26, 54, 93, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: var(--transition);
+}
+
+.contact-card:hover .contact-icon {
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+}
+
+.contact-icon i {
+    font-size: 2rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.contact-card:hover .contact-icon i {
+    color: white;
+}
+
+.contact-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.contact-card p {
+    margin-bottom: 5px;
+    color: var(--text-medium);
+}
+
+.contact-card p a {
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.contact-card p a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.contact-available {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.1), rgba(26, 54, 93, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Map Section */
+.map-container {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.map-container iframe {
+    display: block;
+    border-radius: var(--border-radius);
+}
+
+.map-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.map-info h4 {
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.map-info p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Contact Form */
+.contact-form-container {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    height: 100%;
+}
+
+.contact-form-container h3 {
+    margin-bottom: 25px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary);
+}
+
+.form-check-label a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+#formStatus {
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+}
+
+#formStatus.success {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+    display: block;
+}
+
+#formStatus.error {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+    display: block;
+}
+
+/* FAQ Section */
+.accordion-item {
+    border: none;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.accordion-button {
+    padding: 20px 25px;
+    font-weight: 600;
+    background: white;
+    color: var(--text-dark);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary);
+    background-color: rgba(26, 54, 93, 0.05);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.accordion-body {
+    padding: 20px 25px;
+    color: var(--text-medium);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231a365d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Support Team Section */
+.team-member-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.team-member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.member-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.team-member-card:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.member-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.member-info .position {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.1), rgba(26, 54, 93, 0.05));
+    color: var(--primary);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
+}
+
+.back-to-top:hover {
+    background-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .contact-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-hero {
+        padding: 150px 0 80px;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-form-container {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-hero .lead {
+        font-size: 1.1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-card {
+        margin-bottom: 30px;
+    }
+    
+    .team-member-card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-hero {
+        padding: 130px 0 60px;
+    }
+    
+    .contact-form-container,
+    .map-container {
+        padding: 20px;
+    }
+    
+    .contact-form-container h3 {
+        font-size: 1.5rem;
+    }
+    
+    .map-container iframe {
+        height: 350px;
+    }
+}

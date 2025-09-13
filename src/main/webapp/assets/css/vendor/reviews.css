@@ -1,0 +1,280 @@
+/**
+ * Vendor Reviews CSS - Marry Mate Wedding Planning System
+ * Current Date and Time: 2025-05-07 09:12:26
+ * Current User: IT24102137
+ */
+
+/* Rating Summary Styles */
+.reviews-summary h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+.rating-stars {
+    color: var(--warning);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.rating-bars {
+    margin-top: 1.5rem;
+}
+
+.rating-bar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.rating-label {
+    width: 60px;
+    font-size: 0.85rem;
+}
+
+.rating-bar {
+    flex-grow: 1;
+    margin: 0 0.75rem;
+}
+
+.rating-bar .progress {
+    height: 8px;
+    border-radius: 4px;
+}
+
+.rating-count {
+    width: 30px;
+    text-align: right;
+    font-size: 0.85rem;
+    color: var(--gray-600);
+}
+
+.bg-success-light {
+    background-color: #5cb85c !important;
+}
+
+.bg-warning-light {
+    background-color: #f0ad4e !important;
+}
+
+/* Reviews List Styles */
+.reviews-list {
+    padding: 1.5rem;
+}
+
+.review-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.review-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.reviewer-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviewer-details h6 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.reviewer-meta {
+    display: flex;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.review-service {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+}
+
+.review-date {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+    margin-left: 1rem;
+}
+
+.review-stars {
+    display: flex;
+    margin-right: 0.5rem;
+    color: var(--warning);
+}
+
+.review-content {
+    margin-bottom: 1rem;
+}
+
+.review-content p {
+    margin-bottom: 0;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Vendor Response Styles */
+.vendor-response {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(74, 103, 65, 0.05);
+    border-left: 3px solid var(--primary);
+    border-radius: 0.25rem;
+}
+
+.response-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.response-title {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.response-date {
+    font-size: 0.75rem;
+    color: var(--gray-600);
+}
+
+.response-content p {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+/* Reply Modal Styles */
+.original-review h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.review-content {
+    font-size: 0.9rem;
+}
+
+.date-text {
+    font-size: 0.8rem;
+}
+
+/* Tips Section Styles */
+.tip-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.tip-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.tip-content h6 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.tip-content p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Search Container */
+.search-container {
+    width: 250px;
+}
+
+/* Filter Badge Styles */
+.filter-badge {
+    background-color: var(--primary);
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    margin-left: 0.5rem;
+}
+
+/* No Reviews */
+.empty-state {
+    padding: 2rem;
+}
+
+.empty-state i {
+    color: var(--gray-400);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .review-header {
+        flex-direction: column;
+    }
+    
+    .review-meta {
+        margin-top: 0.5rem;
+    }
+    
+    .review-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .review-actions {
+        margin-top: 0.5rem;
+    }
+    
+    .search-container {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    
+    .tip-item {
+        flex-direction: column;
+    }
+    
+    .tip-icon {
+        margin-bottom: 0.5rem;
+    }
+}

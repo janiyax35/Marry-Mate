@@ -1,0 +1,628 @@
+/* 
+ * Marry Mate - Wedding Guides Page Styles
+ * Current Date and Time: 2025-05-18 13:16:36
+ * Current User: IT24100905
+ */
+
+/* Guide Hero Section */
+.guide-hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1509927083803-4bd519298ac4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+    background-size: cover;
+    padding: 180px 0 100px;
+    color: var(--text-light);
+    text-align: center;
+    overflow: hidden;
+}
+
+.guide-hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9), rgba(38, 50, 56, 0.8));
+    z-index: 1;
+}
+
+.guide-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.guide-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.guide-hero .lead {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.guide-search-form .form-control {
+    height: 55px;
+    border-radius: 50px 0 0 50px;
+    font-size: 1rem;
+    padding-left: 25px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.guide-search-form .btn {
+    border-radius: 0 50px 50px 0;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+
+/* Guide Categories Filters */
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.category-filter-btn {
+    padding: 8px 20px;
+    background: white;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-medium);
+    transition: var(--transition);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.category-filter-btn:hover, 
+.category-filter-btn.active {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(26, 54, 93, 0.2);
+}
+
+/* Featured Guide */
+.featured-guide {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featured-guide-img {
+    position: relative;
+    height: 100%;
+    min-height: 350px;
+}
+
+.featured-guide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-light));
+    color: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(200, 178, 115, 0.3);
+}
+
+.featured-badge i {
+    margin-right: 5px;
+}
+
+.featured-guide-content {
+    padding: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.guide-category {
+    display: inline-block;
+    background: rgba(26, 54, 93, 0.1);
+    color: var(--primary);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.featured-guide-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.guide-highlights {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.guide-highlights li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.guide-highlights li i {
+    color: var(--success);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.featured-guide-content .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Guide Cards */
+.guide-card {
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.guide-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.guide-img {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.guide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.guide-card:hover .guide-img img {
+    transform: scale(1.1);
+}
+
+.guide-img .guide-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin-bottom: 0;
+}
+
+.guide-content {
+    padding: 25px;
+}
+
+.guide-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    min-height: 2.7em;
+    line-height: 1.35;
+}
+
+.guide-content p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    min-height: 3.8em;
+}
+
+.guide-meta {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-medium);
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.guide-meta span i {
+    margin-right: 5px;
+    color: var(--primary);
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.read-more:hover {
+    color: var(--primary);
+}
+
+.read-more:hover i {
+    transform: translateX(5px);
+}
+
+/* Pagination */
+.guides-pagination {
+    margin-top: 50px;
+}
+
+.pagination {
+    gap: 5px;
+}
+
+.page-item .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-medium);
+    border: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.page-item.active .page-link,
+.page-item .page-link:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Guide Collections */
+.collection-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.collection-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.1), rgba(26, 54, 93, 0.05));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: var(--transition);
+}
+
+.collection-card:hover .collection-icon {
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+}
+
+.collection-icon i {
+    font-size: 1.75rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.collection-card:hover .collection-icon i {
+    color: white;
+}
+
+.collection-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.collection-card p {
+    color: var(--text-medium);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.collection-card .btn {
+    margin-top: auto;
+}
+
+/* Planning Tools */
+.tool-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: var(--transition);
+}
+
+.tool-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.tool-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    color: var(--text-medium);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tool-card .btn {
+    margin-top: auto;
+}
+
+.tool-cta {
+    margin-top: 50px;
+}
+
+.tool-cta p {
+    color: var(--text-medium);
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Expert Advice Section */
+.highlight-text {
+    font-size: 1.3rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--accent);
+    padding-left: 15px;
+}
+
+.expert-form .form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    transition: var(--transition);
+}
+
+.expert-form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary);
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+}
+
+.subscribe-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.subscribe-section p {
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.subscribe-form {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.subscribe-form .form-control {
+    height: 55px;
+    border-radius: 50px 0 0 50px;
+    font-size: 1rem;
+    padding-left: 25px;
+    border: none;
+}
+
+.subscribe-form .btn {
+    border-radius: 0 50px 50px 0;
+    padding: 10px 30px;
+    font-weight: 600;
+}
+
+.subscribe-form .form-check-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.subscribe-form .form-check-label a {
+    color: white;
+    text-decoration: underline;
+}
+
+.subscribe-form .form-check-input:checked {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.back-to-top.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
+}
+
+.back-to-top:hover {
+    background-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+    .guide-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .guide-hero {
+        padding: 150px 0 80px;
+    }
+    
+    .guide-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .featured-guide-img {
+        min-height: 300px;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    
+    .featured-guide-img img {
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    
+    .guide-content h3 {
+        min-height: auto;
+    }
+    
+    .guide-content p {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .guide-hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .guide-hero .lead {
+        font-size: 1.1rem;
+    }
+    
+    .guide-search-form .form-control {
+        height: 50px;
+    }
+    
+    .category-filter-btn {
+        padding: 7px 15px;
+        font-size: 0.85rem;
+    }
+    
+    .featured-guide-content {
+        padding: 20px;
+    }
+    
+    .featured-guide-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .tool-icon, .collection-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .tool-icon i, .collection-icon i {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .guide-hero {
+        padding: 130px 0 60px;
+    }
+    
+    .guide-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .guide-search-form .btn span {
+        display: none;
+    }
+    
+    .featured-guide-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .subscribe-form .input-group {
+        flex-direction: column;
+    }
+    
+    .subscribe-form .form-control,
+    .subscribe-form .btn {
+        border-radius: 50px;
+        width: 100%;
+    }
+    
+    .subscribe-form .btn {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,201 @@
+/**
+ * User Bookings CSS - Marry Mate Wedding Planning System
+ * Current Date and Time: 2025-05-14 13:05:47
+ * Current User: IT24102137
+ */
+
+/* Booking Stat Cards */
+.booking-stat-card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.2s;
+}
+
+.booking-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.stat-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gray-600);
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--text-dark);
+}
+
+/* Booking Status Badges */
+.status-badge-pending {
+    background-color: #f39c12;
+}
+
+.status-badge-confirmed {
+    background-color: #2ecc71;
+}
+
+.status-badge-cancelled {
+    background-color: #e74c3c;
+}
+
+.status-badge-completed {
+    background-color: #3498db;
+}
+
+/* Payment Status Badges */
+.payment-badge-pending {
+    background-color: #f39c12;
+}
+
+.payment-badge-partial {
+    background-color: #3498db;
+}
+
+.payment-badge-complete {
+    background-color: #2ecc71;
+}
+
+.payment-badge-refunded {
+    background-color: #e74c3c;
+}
+
+/* Search Container */
+.search-container {
+    width: 250px;
+}
+
+/* Search highlighting */
+mark {
+    background-color: #fff3cd;
+    padding: 0.1em;
+    border-radius: 2px;
+}
+
+/* Booking Details Modal */
+.booking-info-section,
+.services-section,
+.location-info-section,
+.financial-info-section,
+.requirements-section {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: 1.5rem;
+}
+
+.booking-info-section:last-child,
+.services-section:last-child,
+.location-info-section:last-child,
+.financial-info-section:last-child,
+.requirements-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Empty state styling */
+.empty-state {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.empty-state i {
+    color: #adb5bd;
+    margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Table row hover effect */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.04);
+}
+
+/* Vendor/Service info in table */
+.vendor-service-info {
+    display: flex;
+    align-items: center;
+}
+
+.vendor-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.vendor-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.service-name {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+}
+
+/* Action button styling */
+.btn-action {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Refresh button animation */
+.btn-refresh-animate {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Mark matching search text */
+.highlight {
+    background-color: #fff3cd;
+    padding: 0.1em;
+    border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .search-container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .page-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .page-actions button, 
+    .page-actions .btn-group {
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-value {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,630 @@
+/* Registration Page Styles - Marry Mate Wedding Planning System */
+/* Current Date and Time: 2025-04-26 13:48:39 */
+/* Current User: IT24102137 */
+
+/* Root Variables */
+:root {
+    --primary: #1a365d;        /* Deep navy blue */
+    --primary-light: #2d5a92;  /* Lighter navy blue */
+    --accent: #c8b273;         /* Gold accent */
+    --accent-light: #e0d4a9;   /* Light gold */
+    --text-dark: #263238;      /* Nearly black text */
+    --text-medium: #546e7a;    /* Medium gray text */
+    --text-light: #ffffff;     /* White text */
+    --success: #2ecc71;        /* Success green */
+    --error: #e74c3c;          /* Error red */
+    --border-radius: 15px;     /* Consistent border radius */
+    --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Basic Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+/* Background Overlay with Gradient */
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+                rgba(26, 54, 93, 0.85), 
+                rgba(38, 50, 56, 0.85));
+    z-index: 1;
+}
+
+/* Main Container */
+.container {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Register Card */
+.register-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo-container {
+    margin: 0 auto 15px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo-icon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon i {
+    font-size: 40px;
+    color: var(--primary);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Position the ring icon */
+.logo-icon i:first-child {
+    font-size: 45px;
+    color: var(--primary);
+    position: absolute;
+}
+
+.logo-icon i:last-child {
+    font-size: 22px;
+    position: absolute;
+    color: var(--accent);
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Headings */
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    z-index: 3;
+}
+
+/* Always show validation icons - style based on form validity */
+.validation-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--success);
+    z-index: 3;
+    display: none; /* Hide initially, show only when input has content */
+}
+
+.form-control:not(:placeholder-shown) ~ .validation-icon {
+    display: block;
+}
+
+/* Password toggle */
+.password-toggle {
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-medium);
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 5;
+}
+
+.password-toggle:hover {
+    color: var(--primary);
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    padding: 8px 15px 8px 40px;
+    padding-right: 75px;
+    font-size: 15px;
+    width: 100%;
+    transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    z-index: 2;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+    background-color: #fff;
+}
+
+/* Phone input styling - Fix for country code issue */
+.phone-group {
+    margin-bottom: 25px;
+}
+
+.phone-input {
+    padding-left: 90px !important;
+}
+
+.phone-label {
+    left: 90px !important;
+}
+
+.phone-label-focused {
+    top: -12px !important;
+    left: 20px !important;
+    font-size: 11px !important;
+    padding: 0 6px !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 8px !important;
+    color: var(--primary) !important;
+    z-index: 5 !important;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Fixed Floating Label Styling */
+.floating-label {
+    position: absolute;
+    left: 42px;
+    top: 16px;
+    font-size: 15px;
+    color: var(--text-medium);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    z-index: 2;
+}
+
+.form-control:focus ~ .floating-label,
+.form-control:not(:placeholder-shown) ~ .floating-label {
+    top: -12px;
+    left: 20px;
+    font-size: 11px;
+    padding: 0 6px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    color: var(--primary);
+    z-index: 5;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+/* Form validation visual states */
+.form-control:invalid:not(:placeholder-shown) ~ .validation-icon {
+    color: var(--error);
+}
+
+.form-control:valid:not(:placeholder-shown) ~ .validation-icon,
+.form-control:focus:valid ~ .validation-icon {
+    color: var(--success);
+}
+
+/* Account Type Selection - Equal sizing buttons */
+.account-type-container {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 14px;
+    color: var(--text-medium);
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: left;
+    display: block;
+}
+
+.account-type-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.account-type-option {
+    flex: 1;
+    width: 50%; /* Force equal widths */
+}
+
+.account-type-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.account-type-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 8px;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    background: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: var(--transition);
+    height: 100px; /* Fixed height for both */
+    display: flex;
+    justify-content: center;
+}
+
+.account-type-label i {
+    font-size: 28px;
+    color: var(--text-medium);
+    margin-bottom: 10px;
+    transition: var(--transition);
+}
+
+.account-type-label span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Selected state */
+.account-type-input:checked + .account-type-label {
+    border-color: var(--primary);
+    background: rgba(26, 54, 93, 0.05);
+}
+
+.account-type-input:checked + .account-type-label i {
+    color: var(--primary);
+}
+
+.account-type-input:checked + .account-type-label span {
+    color: var(--primary);
+}
+
+/* Hover state */
+.account-type-label:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-light);
+}
+
+.account-type-label:hover i {
+    color: var(--primary);
+}
+
+/* Password strength indicator */
+.password-strength {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.progress {
+    height: 4px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.text-muted {
+    font-size: 12px;
+}
+
+/* Password strength tips */
+.password-tips {
+    color: var(--primary);
+    font-style: italic;
+}
+
+/* Terms & Conditions Checkbox */
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-top: 0.15em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.form-check-label {
+    font-size: 13px;
+    color: var(--text-medium);
+    padding-left: 5px;
+    line-height: 1.3;
+}
+
+.form-check-label a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-check-label a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Register Button */
+.btn-register {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--text-light);
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(26, 54, 93, 0.3);
+}
+
+.btn-register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 54, 93, 0.4);
+}
+
+.btn-register .btn-text {
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.btn-register i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn-register:hover i {
+    transform: translateX(5px);
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--text-medium);
+}
+
+.login-link a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.login-link a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Alert Messages */
+.alert {
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Animation for Form Shake */
+@keyframes formShake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: formShake 0.6s;
+}
+
+/* Particles.js container */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* IntlTelInput Specific Styling - Fix position issues */
+.iti {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.iti__flag-container {
+    z-index: 4;
+}
+
+.iti__selected-flag {
+    padding-left: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+/* Media Queries for Better Responsiveness */
+@media (max-height: 800px) {
+    body {
+        align-items: flex-start;
+    }
+    
+    .container {
+        padding: 20px 15px;
+        min-height: auto;
+    }
+    
+    .register-container {
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    
+    .logo-container {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .logo-icon i:first-child {
+        font-size: 35px;
+    }
+    
+    .logo-icon i:last-child {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 26px;
+    }
+    
+    .subtitle {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    
+    .input-group {
+        margin-bottom: 15px;
+    }
+    
+    .form-control {
+        height: 45px;
+    }
+    
+    .account-type-label {
+        height: 80px;
+        padding: 8px 5px;
+    }
+    
+    .account-type-label i {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .register-container {
+        padding: 15px;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 12px;
+    }
+    
+    .form-control {
+        font-size: 14px;
+    }
+    
+    .account-type-options {
+        gap: 10px;
+    }
+    
+    .account-type-label {
+        height: 75px;
+    }
+    
+    .account-type-label i {
+        font-size: 22px;
+    }
+    
+    .account-type-label span {
+        font-size: 13px;
+    }
+    
+    .btn-register {
+        padding: 12px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,281 @@
+/**
+ * Vendor Availability CSS - Marry Mate Wedding Planning System
+ * Current Date and Time: 2025-05-07 10:09:35
+ * Current User: IT24102137
+ */
+
+/* Calendar Styles */
+.availability-calendar {
+    height: 650px;
+    margin-bottom: 1rem;
+}
+
+.fc-event {
+    cursor: pointer;
+}
+
+.fc-event.available {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+.fc-event.unavailable {
+    background-color: var(--danger);
+    border-color: var(--danger);
+}
+
+.fc-event.booked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.fc-day.fc-day-today {
+    background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
+}
+
+.fc-day-past {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+.fc-day-future:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.05);
+    cursor: pointer;
+}
+
+/* Calendar Legend */
+.calendar-legend {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--gray-600);
+}
+
+.color-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 4px;
+}
+
+.color-box.available {
+    background-color: var(--success);
+}
+
+.color-box.unavailable {
+    background-color: var(--danger);
+}
+
+.color-box.booked {
+    background-color: var(--primary);
+}
+
+/* Unavailable Dates List */
+.unavailable-dates-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--gray-200);
+    border-radius: var(--border-radius);
+}
+
+.unavailable-date-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+
+.unavailable-date-item:last-child {
+    border-bottom: none;
+}
+
+.unavailable-date-item:hover {
+    background-color: var(--gray-100);
+}
+
+.unavailable-date-text {
+    font-size: 0.9rem;
+}
+
+.unavailable-date-actions .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Working Hours */
+.working-hours-container {
+    margin-bottom: 1rem;
+}
+
+.day-hours {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 0.75rem;
+}
+
+.day-hours:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.day-name {
+    width: 90px;
+    font-weight: 500;
+}
+
+.hours-inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hours-selector {
+    margin-top: 0.5rem;
+    display: flex;
+}
+
+/* Booking Items */
+.booking-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+
+.booking-item:last-child {
+    border-bottom: none;
+}
+
+.booking-item:hover {
+    background-color: var(--gray-100);
+    cursor: pointer;
+}
+
+.booking-date-badge {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 8px;
+    margin-right: 0.75rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.1;
+    flex-shrink: 0;
+}
+
+.booking-date-month {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.booking-date-day {
+    font-size: 1.2rem;
+}
+
+.booking-details {
+    flex: 1;
+}
+
+.booking-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.booking-subtitle {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    display: flex;
+    align-items: center;
+}
+
+.booking-subtitle i {
+    margin-right: 0.25rem;
+    font-size: 0.75rem;
+    width: 14px;
+    text-align: center;
+}
+
+.booking-status {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-left: auto;
+    text-align: center;
+}
+
+.booking-status.confirmed {
+    background-color: rgba(var(--bs-success-rgb), 0.15);
+    color: var(--success);
+}
+
+.booking-status.pending {
+    background-color: rgba(var(--bs-warning-rgb), 0.15);
+    color: var(--warning);
+}
+
+/* Loading States */
+.loading-block {
+    padding: 1rem;
+    text-align: center;
+    color: var(--gray-500);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .availability-calendar {
+        height: 500px;
+    }
+    
+    .day-hours {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .day-name {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .hours-inputs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .calendar-legend {
+        margin-bottom: 0.5rem;
+    }
+    
+    .page-header {
+        flex-direction: column;
+    }
+    
+    .page-actions {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .page-actions button {
+        width: 100%;
+    }
+}

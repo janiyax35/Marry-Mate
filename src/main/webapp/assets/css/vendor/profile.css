@@ -1,0 +1,360 @@
+/**
+ * Vendor Profile CSS - Marry Mate Wedding Planning System
+ * Current Date and Time: 2025-05-07 08:49:56
+ * Current User: IT24102137
+ */
+
+/* Profile Banner */
+.profile-banner {
+    position: relative;
+    height: 250px;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.profile-banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/images/vendor/default-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 2;
+}
+
+.profile-banner-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding: 1.5rem;
+    color: white;
+}
+
+.profile-avatar-container {
+    position: relative;
+    margin-right: 1.5rem;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.change-avatar-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-banner-info {
+    flex: 1;
+}
+
+.profile-banner-info h2 {
+    margin-bottom: 0.25rem;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.change-banner-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.profile-rating {
+    display: flex;
+    align-items: center;
+}
+
+.profile-rating .stars {
+    color: var(--warning);
+    margin-right: 0.5rem;
+}
+
+/* Profile Tabs */
+.profile-tabs {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: none;
+    box-shadow: var(--box-shadow);
+}
+
+.profile-tabs .nav-link {
+    color: var(--text-medium);
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    padding: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.profile-tabs .nav-link:hover {
+    color: var(--primary);
+}
+
+.profile-tabs .nav-link.active {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background-color: transparent;
+}
+
+.profile-tab-content {
+    margin-bottom: 2rem;
+}
+
+/* Service Cards */
+.service-card {
+    height: 100%;
+    transition: transform 0.2s;
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-card-banner {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.service-card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.service-price {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Portfolio Gallery */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio-item {
+    position: relative;
+    height: 200px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
+}
+
+.portfolio-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.portfolio-action-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    border: none;
+}
+
+.portfolio-action-btn:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Reviews List */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.review-item {
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 1.5rem;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.rating {
+    color: var(--warning);
+}
+
+.review-date {
+    font-size: 0.85rem;
+    color: var(--text-medium);
+}
+
+.review-content {
+    margin-bottom: 0.75rem;
+}
+
+.review-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Password Strength Meter */
+.password-strength .progress {
+    height: 8px;
+}
+
+.password-strength .progress-bar.bg-danger {
+    background-color: var(--danger) !important;
+}
+
+.password-strength .progress-bar.bg-warning {
+    background-color: var(--warning) !important;
+}
+
+.password-strength .progress-bar.bg-success {
+    background-color: var(--success) !important;
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 500;
+}
+
+.form-text {
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .profile-banner {
+        height: 350px;
+    }
+    
+    .profile-banner-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile-avatar-container {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .profile-tabs .nav-link {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .portfolio-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .profile-banner-info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .profile-tabs {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+    
+    .portfolio-gallery {
+        grid-template-columns: 1fr;
+    }
+}
