@@ -1,0 +1,39 @@
+{
+  "vendorAvailability": [
+    {
+      "vendorId": "V1004",
+      "unavailableDates": [
+        "2025-05-15",
+        "2025-05-16",
+        "2025-05-30",
+        "2025-06-01",
+        "2025-06-06",
+        "2025-06-07"
+      ],
+      "workingHours": {
+        "Monday": {"start": "09:00", "end": "17:00"},
+        "Tuesday": {"start": "09:00", "end": "17:00"},
+        "Wednesday": {"start": "09:00", "end": "17:00"},
+        "Thursday": {"start": "09:00", "end": "17:00"},
+        "Friday": {"start": "09:00", "end": "18:00"},
+        "Saturday": {"start": "10:00", "end": "16:00"},
+        "Sunday": {"start": null, "end": null}
+      },
+      "bookedSlots": [
+        {
+          "date": "2025-06-15",
+          "startTime": "14:00",
+          "endTime": "22:00",
+          "bookingId": "B1001"
+        },
+        {
+          "date": "2025-07-22",
+          "startTime": "10:00",
+          "endTime": "18:00",
+          "bookingId": "B1004"
+        }
+      ],
+      "lastUpdated": "2025-05-05 16:30:00"
+    }
+  ]
+}

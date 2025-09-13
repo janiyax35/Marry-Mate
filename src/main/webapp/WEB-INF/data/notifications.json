@@ -1,0 +1,15 @@
+{
+  "notifications": [
+    {
+      "notificationId": "N1001",
+      "userId": "V1004",
+      "type": "booking_request",
+      "title": "New Booking Request",
+      "message": "You have received a new booking request for Wedding Photography on 2025-08-12",
+      "relatedId": "B1006",
+      "dateCreated": "2025-04-05 09:45:00",
+      "isRead": false,
+      "actionUrl": "/vendor/bookings.jsp?id=B1006"
+    }
+  ]
+}

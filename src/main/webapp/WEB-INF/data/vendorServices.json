@@ -1,0 +1,130 @@
+{
+  "services": [
+    {
+      "serviceId": "S1001",
+      "vendorId": "V1007",
+      "name": "Photo Session by janiya",
+      "category": "photography",
+      "description": "Photo Session",
+      "basePrice": 1234.0,
+      "baseDuration": 0.0,
+      "baseGuestCount": 0,
+      "priceModel": "fixed",
+      "hourlyRate": 0.0,
+      "perGuestRate": 0.0,
+      "status": "active",
+      "isFeatured": true,
+      "seoKeywords": "12356465456",
+      "additionalOptions": [
+        {
+          "optionId": "OPT10011",
+          "name": "Photo Session",
+          "description": "123123",
+          "price": 100.0
+        }
+      ],
+      "images": {
+        "icon": "/resources/vendor/serviceImages/S1001.jpg",
+        "background": "H:\\SLIIT\\Sem 2\\OOP Project\\MarrayMate\\src\\main\\webapp\\resources\\resources\\vendor\\backgroundImagesS1001_bg.jpg"
+      },
+      "createdAt": "2025-05-12 03:30:36",
+      "updatedAt": "2025-05-13 13:14:30"
+    },
+    {
+      "serviceId": "S1002",
+      "vendorId": "V1007",
+      "name": "No Edited Photo Session by janiya",
+      "category": "photography",
+      "description": "Photo Session",
+      "basePrice": 4000.0,
+      "baseDuration": 5.0,
+      "baseGuestCount": 0,
+      "priceModel": "fixed",
+      "hourlyRate": 0.0,
+      "perGuestRate": 0.0,
+      "status": "active",
+      "isFeatured": true,
+      "seoKeywords": "",
+      "additionalOptions": [
+        {
+          "optionId": "OPT20011",
+          "name": "Photo Session",
+          "description": "123123",
+          "price": 100.0
+        }
+      ],
+      "images": {
+        "icon": "/resources/vendor/serviceImages/S1002.jpg",
+        "background": "/resources/vendor/backgroundImages/S1002_bg.jpg"
+      },
+      "createdAt": "2025-05-12 03:30:36",
+      "updatedAt": "2025-05-13 13:14:30"
+    },
+    {
+      "serviceId": "S1003",
+      "vendorId": "V1007",
+      "name": "TEST EDITED Wedding Planning and Coordination",
+      "category": "wedding-planning",
+      "description": "Wedding Planning and Coordination",
+      "basePrice": 999.99,
+      "baseDuration": 0.0,
+      "baseGuestCount": 0,
+      "priceModel": "fixed",
+      "hourlyRate": 0.0,
+      "perGuestRate": 0.0,
+      "status": "active",
+      "isFeatured": true,
+      "seoKeywords": "",
+      "additionalOptions": [
+        {
+          "optionId": "OPT30011",
+          "name": "Wedding Planning and Coordination",
+          "description": "123123",
+          "price": 100.0
+        }
+      ],
+      "images": {
+        "icon": "/resources/vendor/serviceImages/S1003.jpg",
+        "background": "/resources/vendor/backgroundImages/S1003_bg.jpg"
+      },
+      "createdAt": "2025-05-12 03:30:36",
+      "updatedAt": "2025-05-13 13:14:30"
+    },
+    {
+      "serviceId": "S1004",
+      "vendorId": "V1007",
+      "name": "HAVINDU Catering",
+      "category": "catering",
+      "description": "HAVINDU Catering dis",
+      "basePrice": 2000.0,
+      "baseDuration": 0.0,
+      "baseGuestCount": 50,
+      "priceModel": "per_guest",
+      "hourlyRate": 0.0,
+      "perGuestRate": 5.0,
+      "status": "active",
+      "isFeatured": true,
+      "seoKeywords": "123",
+      "additionalOptions": [
+        {
+          "optionId": "OPT10041",
+          "name": "OPTION01",
+          "description": "OPTION01 dis",
+          "price": 100.0
+        },
+        {
+          "optionId": "OPT10042",
+          "name": "OPTION02",
+          "description": "OPTION02 dis",
+          "price": 200.0
+        }
+      ],
+      "images": {
+        "icon": "/assets/images/services/icons/default-profile.jpg",
+        "background": "/assets/images/services/backgrounds/default-background.jpg"
+      },
+      "createdAt": "2025-05-16 09:20:49",
+      "updatedAt": "2025-05-18 15:25:35"
+    }
+  ]
+}

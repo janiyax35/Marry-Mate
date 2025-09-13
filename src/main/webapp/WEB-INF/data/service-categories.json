@@ -1,0 +1,87 @@
+[
+  {
+    "name": "photography",
+    "active": true,
+    "serviceCount": 11
+  },
+  {
+    "name": "videography",
+    "active": true,
+    "serviceCount": 10
+  },
+  {
+    "name": "catering",
+    "active": true,
+    "serviceCount": 101
+  },
+  {
+    "name": "venues",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "decoration",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "entertainment",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "planning",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "beauty",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "transportation",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "attire",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "jewelry",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "invitations",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "gifts",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "flowers",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "rental",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "cake",
+    "active": true,
+    "serviceCount": 0
+  },
+  {
+    "name": "honeymoon",
+    "active": true,
+    "serviceCount": 0
+  }
+]

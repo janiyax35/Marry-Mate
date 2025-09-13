@@ -1,0 +1,154 @@
+{
+  "bookings": [
+    {
+      "bookingId": "B1001",
+      "userId": "U1005",
+      "weddingDate": "2025-08-15",
+      "bookingDate": "2025-05-01 08:33:44",
+      "eventLocation": "Crystal Garden Venue, 123 Flower Lane, Orlando, FL",
+      "eventStartTime": "15:00:00",
+      "eventEndTime": "23:00:00",
+      "totalGuestCount": 180,
+      "totalHours": 8,
+      "specialRequirements": "Need drone shots of venue exterior and first dance. Extra coverage for morning bridal preparations.",
+      "status": "confirmed",
+      "totalBookingPrice": 6649.969999999999,
+      "depositPaid": true,
+      "depositAmount": 1200.0,
+      "paymentStatus": "partial",
+      "contractSigned": true,
+      "createdBy": "IT24102137",
+      "lastUpdated": "2025-05-15 23:44:54",
+      "bookedServices": [
+        {
+          "serviceBookingId": "SB10001",
+          "serviceId": "S1001",
+          "vendorId": "V1007",
+          "serviceName": "Premium Wedding Photography Package",
+          "basePrice": 1799.99,
+          "hours": 10,
+          "baseHours": 8,
+          "additionalHours": 2,
+          "additionalHoursPrice": 300.0,
+          "guestCount": 180,
+          "priceModel": "hourly",
+          "status": "pending",
+          "lastUpdated": "2025-05-01 08:33:44",
+          "selectedOptions": [
+            {
+              "optionId": "OPT1001",
+              "name": "Drone Aerial Photography",
+              "price": 299.99
+            },
+            {
+              "optionId": "OPT1002",
+              "name": "Same-Day Edit Slideshow",
+              "price": 249.99
+            }
+          ],
+          "serviceTotal": 2649.97,
+          "specialNotes": "Need extra coverage for morning bridal preparations."
+        },
+        {
+          "serviceBookingId": "SB94189",
+          "serviceId": "S1002",
+          "vendorId": "V1007",
+          "serviceName": "No Edited Photo Session by janiya",
+          "basePrice": 4000.0,
+          "hours": 0,
+          "baseHours": 0,
+          "additionalHours": 0,
+          "additionalHoursPrice": 0.0,
+          "guestCount": 0,
+          "priceModel": "fixed",
+          "status": "pending",
+          "lastUpdated": "2025-05-15 23:44:54",
+          "selectedOptions": [],
+          "serviceTotal": 4000.0,
+          "specialNotes": ""
+        }
+      ]
+    },
+    {
+      "bookingId": "B2129",
+      "userId": "U1005",
+      "weddingDate": "2025-05-16",
+      "bookingDate": "2025-05-15 10:08:17",
+      "eventLocation": "SLIIT",
+      "eventStartTime": "08:00",
+      "eventEndTime": "19:00",
+      "totalGuestCount": 100,
+      "totalHours": 0,
+      "specialRequirements": "no any",
+      "status": "pending",
+      "bookedServices": [
+        {
+          "serviceBookingId": "SB27292",
+          "serviceId": "S1002",
+          "vendorId": "V1007",
+          "serviceName": "No Edited Photo Session by janiya",
+          "basePrice": 4000.0,
+          "hours": 0,
+          "baseHours": 5.0,
+          "additionalHours": 0,
+          "additionalHoursPrice": 0.0,
+          "guestCount": 100,
+          "baseGuestCount": 0,
+          "additionalGuests": 0,
+          "additionalGuestPrice": 0.0,
+          "priceModel": "fixed",
+          "status": "true",
+          "lastUpdated": "2025-05-16 10:08:17",
+          "selectedOptions": [
+            {
+              "optionId": "OPT20011",
+              "name": "Photo Session",
+              "price": 100
+            }
+          ],
+          "serviceTotal": 4100.0,
+          "specialNotes": "no any"
+        },
+        {
+          "serviceBookingId": "SB26704",
+          "serviceId": "S1004",
+          "vendorId": "V1007",
+          "serviceName": "HAVINDU Catering",
+          "basePrice": 2000.0,
+          "hours": 0,
+          "baseHours": 0.0,
+          "additionalHours": 0,
+          "additionalHoursPrice": 0.0,
+          "guestCount": 100,
+          "baseGuestCount": 50,
+          "additionalGuests": 50,
+          "additionalGuestPrice": 250.0,
+          "priceModel": "per_guest",
+          "status": "true",
+          "lastUpdated": "2025-05-16 10:12:29",
+          "selectedOptions": [
+            {
+              "optionId": "OPT10041",
+              "name": "OPTION01",
+              "price": 100
+            },
+            {
+              "optionId": "OPT10042",
+              "name": "OPTION02",
+              "price": 200
+            }
+          ],
+          "serviceTotal": 2550.0,
+          "specialNotes": ""
+        }
+      ],
+      "totalBookingPrice": 6650.0,
+      "depositPaid": true,
+      "depositAmount": 0.0,
+      "paymentStatus": "paid",
+      "contractSigned": true,
+      "createdBy": "IT24102137",
+      "lastUpdated": "2025-05-16 10:12:29"
+    }
+  ]
+}

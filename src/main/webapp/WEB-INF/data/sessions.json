@@ -1,0 +1,52 @@
+{
+  "sessions": [
+    {
+      "sessionId": "84E57B9C823BD8F2AB92B4B764235F74",
+      "userId": "U1010",
+      "username": "TEST003",
+      "fullName": "TESTthree",
+      "role": "user",
+      "ipAddress": "127.0.0.1",
+      "loginTime": "2025-05-03 18:13:55",
+      "lastActivity": "2025-05-03 18:13:55",
+      "expiryTime": "2025-05-03 18:43:55",
+      "browser": "Mozilla Firefox",
+      "os": "Windows 10",
+      "device": "Desktop",
+      "screenSize": "Unknown",
+      "location": "Unknown",
+      "isp": "Unknown",
+      "activities": [
+        {
+          "action": "Login",
+          "details": "User logged in successfully",
+          "timestamp": "2025-05-03 18:13:55"
+        }
+      ]
+    },
+    {
+      "sessionId": "9DE315618F590EA5640C3C67340CDFF2",
+      "userId": "U1009",
+      "username": "TEST002",
+      "fullName": "TEST zoeo",
+      "role": "user",
+      "ipAddress": "0:0:0:0:0:0:0:1",
+      "loginTime": "2025-05-03 18:08:45",
+      "lastActivity": "2025-05-03 18:08:45",
+      "expiryTime": "2025-05-03 18:38:45",
+      "browser": "Unknown",
+      "os": "Windows 10",
+      "device": "Desktop",
+      "screenSize": "Unknown",
+      "location": "Unknown",
+      "isp": "Unknown",
+      "activities": [
+        {
+          "action": "Login",
+          "details": "User logged in successfully",
+          "timestamp": "2025-05-03 18:08:45"
+        }
+      ]
+    }
+  ]
+}

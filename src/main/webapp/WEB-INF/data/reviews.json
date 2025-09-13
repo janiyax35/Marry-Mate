@@ -1,0 +1,211 @@
+{
+  "reviews": [
+    {
+      "reviewId": "R2001",
+      "userId": "U1005",
+      "userName": "Jennifer Smith",
+      "userPhotoUrl": "/assets/images/users/user-1005.jpg",
+      "vendorId": "V1001",
+      "serviceId": "S1001",
+      "bookingId": "B2001",
+      "rating": 5.0,
+      "comment": "NO Edited Michael was absolutely phenomenal! His photography captured every special moment of our wedding day, including some beautiful candid shots we didn\u0027t even realize he was taking. The drone footage was spectacular and really showed off our venue. Worth every penny and more!",
+      "reviewDate": "2025-05-18 15:57:06",
+      "vendorResponse": {
+        "text": "Thank you so much for your wonderful review! It was a pleasure to capture your beautiful wedding day. The drone shots at Crystal Garden turned out amazing - I\u0027m so glad you\u0027re happy with them!",
+        "responseDate": "2025-09-03 09:15:22"
+      },
+      "status": "published",
+      "helpfulCount": 10,
+      "flagged": false,
+      "photoUrls": [
+        "/assets/images/reviews/r2001-1.jpg",
+        "/assets/images/reviews/r2001-2.jpg"
+      ],
+      "detailedRatings": {
+        "quality": 5.0,
+        "value": 5.0,
+        "responsiveness": 5.0,
+        "professionalism": 5.0,
+        "flexibility": 5.0
+      },
+      "verifiedBooking": true,
+      "lastUpdated": "2025-05-18 15:57:06"
+    },
+    {
+      "reviewId": "R2002",
+      "userId": "U1008",
+      "userName": "Robert Johnson",
+      "userPhotoUrl": "/assets/images/users/user-1008.jpg",
+      "vendorId": "V1002",
+      "serviceId": "S2001",
+      "bookingId": "B2002",
+      "rating": 4.5,
+      "comment": "Excellent catering service! The food was delicious and our guests raved about the appetizers. The staff was professional and attentive. We had a small issue with the timing of the dessert service, but they quickly resolved it. Special dietary requirements were handled perfectly.",
+      "reviewDate": "2025-07-25 18:45:12",
+      "vendorResponse": {
+        "text": "Thank you for your feedback! We\u0027re delighted that you enjoyed our catering services. We apologize for the timing issue with dessert service and appreciate your understanding as we resolved it. We hope to serve you again for future events!",
+        "responseDate": "2025-07-26 11:30:05"
+      },
+      "status": "published",
+      "helpfulCount": 8,
+      "flagged": false,
+      "photoUrls": [
+        "/assets/images/reviews/r2002-1.jpg"
+      ],
+      "detailedRatings": {
+        "quality": 4.7,
+        "value": 4.3,
+        "responsiveness": 4.5,
+        "professionalism": 4.8,
+        "flexibility": 4.2
+      },
+      "verifiedBooking": true,
+      "lastUpdated": "2025-07-26 11:35:22"
+    },
+    {
+      "reviewId": "R2003",
+      "userId": "U1012",
+      "userName": "Sarah Williams",
+      "userPhotoUrl": "/assets/images/users/user-1012.jpg",
+      "vendorId": "V1003",
+      "serviceId": "S3001",
+      "bookingId": "B2003",
+      "rating": 5.0,
+      "comment": "Garden Paradise Estate exceeded all our expectations! The venue was absolutely stunning, and the staff was incredibly helpful throughout our entire event. The gardens were in full bloom for our September wedding, and our guests couldn\u0027t stop talking about how beautiful everything was. The lighting package was worth every penny - it transformed the space completely after sunset!",
+      "reviewDate": "2025-09-12 20:15:30",
+      "vendorResponse": {
+        "text": "Thank you for your glowing review, Sarah! We\u0027re thrilled that you and your guests enjoyed our venue. September is indeed a beautiful time for our gardens, and we\u0027re glad the lighting package enhanced your evening celebration. Congratulations again on your marriage!",
+        "responseDate": "2025-09-14 10:20:15"
+      },
+      "status": "published",
+      "helpfulCount": 15,
+      "flagged": false,
+      "photoUrls": [
+        "/assets/images/reviews/r2003-1.jpg",
+        "/assets/images/reviews/r2003-2.jpg",
+        "/assets/images/reviews/r2003-3.jpg"
+      ],
+      "detailedRatings": {
+        "quality": 5.0,
+        "value": 4.9,
+        "responsiveness": 5.0,
+        "professionalism": 5.0,
+        "flexibility": 4.7
+      },
+      "verifiedBooking": true,
+      "lastUpdated": "2025-09-14 10:25:33"
+    },
+    {
+      "reviewId": "R2004",
+      "userId": "U1020",
+      "userName": "Michael Chen",
+      "userPhotoUrl": "/assets/images/users/user-1020.jpg",
+      "vendorId": "V1004",
+      "serviceId": "S4001",
+      "bookingId": "B2004",
+      "rating": 4.8,
+      "comment": "Emily at Bloom Floral Designs created the most beautiful arrangements for our beach wedding. The flowers were fresh, vibrant, and perfectly matched our color scheme. My bridal crown was absolutely stunning and photographed beautifully. The only small issue was that one of the centerpieces was slightly different than the others, but it was barely noticeable.",
+      "reviewDate": "2025-06-25 16:40:12",
+      "vendorResponse": {
+        "text": "Thank you for your kind review, Michael! We\u0027re delighted that you loved your flowers, especially your bridal crown. We appreciate your feedback about the centerpiece and will use this to improve our quality control. Wishing you a lifetime of happiness!",
+        "responseDate": "2025-06-26 09:05:47"
+      },
+      "status": "published",
+      "helpfulCount": 6,
+      "flagged": false,
+      "photoUrls": [
+        "/assets/images/reviews/r2004-1.jpg",
+        "/assets/images/reviews/r2004-2.jpg"
+      ],
+      "detailedRatings": {
+        "quality": 4.8,
+        "value": 4.7,
+        "responsiveness": 5.0,
+        "professionalism": 4.9,
+        "flexibility": 4.6
+      },
+      "verifiedBooking": true,
+      "lastUpdated": "2025-06-26 09:10:22"
+    },
+    {
+      "reviewId": "R2005",
+      "userId": "U1025",
+      "userName": "Jessica Martinez",
+      "userPhotoUrl": "/assets/images/users/user-1025.jpg",
+      "vendorId": "V1005",
+      "serviceId": "S5001",
+      "bookingId": "B2005",
+      "rating": 4.9,
+      "comment": "James from Rhythm Makers was the perfect DJ for our wedding! He listened to our music preferences and created the perfect playlist that kept everyone dancing all night. The lighting package transformed our venue, and the ceremony sound system ensured everyone could hear our vows clearly. Highly recommend their services!",
+      "reviewDate": "2025-10-20 22:30:15",
+      "vendorResponse": {
+        "text": "Thank you for your fantastic review, Jessica! We\u0027re thrilled that you enjoyed the music and lighting for your wedding. It was our pleasure to be part of your special day, and we\u0027re so happy we could help create those memorable moments on the dance floor!",
+        "responseDate": "2025-10-21 11:15:40"
+      },
+      "status": "published",
+      "helpfulCount": 9,
+      "flagged": false,
+      "photoUrls": [
+        "/assets/images/reviews/r2005-1.jpg"
+      ],
+      "detailedRatings": {
+        "quality": 5.0,
+        "value": 4.7,
+        "responsiveness": 4.8,
+        "professionalism": 5.0,
+        "flexibility": 5.0
+      },
+      "verifiedBooking": true,
+      "lastUpdated": "2025-10-21 11:20:55"
+    },
+    {
+      "reviewId": "R2006",
+      "userId": "U1005",
+      "userName": "User",
+      "vendorId": "V1007",
+      "serviceId": "S1004",
+      "bookingId": "B2129",
+      "reviewDate": "2025-05-18 16:02:49",
+      "rating": 3.0,
+      "comment": "James from Rhythm Makers was the perfect DJ for our wedding! He listened to our music preferences and created the perfect playlist that kept everyone dancing all night. The lighting package transformed our venue, and the ceremony sound system ensured everyone could hear our vows clearly. Highly recommend their services!",
+      "status": "published",
+      "lastUpdated": "2025-05-18 16:02:49",
+      "detailedRatings": {
+        "quality": 5.0,
+        "value": 3.8,
+        "responsiveness": 2.0,
+        "professionalism": 3.2,
+        "flexibility": 3.4
+      },
+      "helpfulCount": 7,
+      "flagged": false,
+      "verifiedBooking": true,
+      "photoUrls": []
+    },
+    {
+      "reviewId": "R2007",
+      "userId": "U1005",
+      "userName": "User",
+      "vendorId": "V1007",
+      "serviceId": "S1004",
+      "bookingId": "B2129",
+      "reviewDate": "2025-05-18 16:03:26",
+      "rating": 5.0,
+      "comment": "wJames from Rhythm Makers was the perfect DJ for our wedding! He listened to our music preferences and created the perfect playlist that kept everyone dancing all night. The lighting package transformed our venue, and the ceremony sound system ensured everyone could hear our vows clearly. Highly recommend their services!\",\r\n      ",
+      "status": "published",
+      "lastUpdated": "2025-05-18 16:03:26",
+      "detailedRatings": {
+        "quality": 2.2,
+        "value": 2.6,
+        "responsiveness": 1.6,
+        "professionalism": 1.5,
+        "flexibility": 1.8
+      },
+      "helpfulCount": 4,
+      "flagged": false,
+      "verifiedBooking": true,
+      "photoUrls": []
+    }
+  ]
+}
